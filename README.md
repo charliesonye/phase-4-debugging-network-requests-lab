@@ -63,11 +63,17 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  Error Message: <NameError: uninitialized constant ToysController::Toys>
+  Solution: Viewed the Toys Controller, then create method for naming error for instance of Toy. 
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  Error Message: Uncaught (in promise) SyntaxError: Unexpected end of JSON input
+  Solution: Viewed Toys Controller/update method to add a method to render updated data in JSON format.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  Error Message:<ActionController::RoutingError: No route matches [DELETE] "/toys/4">
+  Solution: Checked Routes file for the :destroy route and added it.
